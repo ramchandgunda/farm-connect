@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Farm Connect - Login</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <!-- HEADER -->
+        <header class="header">
+
+            <div class="logo">
+                <img src="logo.jpeg" alt="Farm Connect Logo">
+
+                <div>
+                    <h2>Farm Connect</h2>
+                    <small>Farmer Friendly Portal</small>
+                </div>
+            </div>
+
+            <div class="search">
+                <input type="text" id="searchInput" placeholder="Search...">
+                <button id="searchBtn">Search</button>
+            </div>
+
+            <div class="account">
+                <a href="login.html">Login</a>
+                <a href="register.html">Register</a>
+            </div>
+
+        </header>
+
+
+        <!-- CATEGORIES -->
+        <nav class="categories">
+
+            <a href="index.html">Home</a>
+            <a href="crop-guide.html">Crop Guide</a>
+            <a href="market-prices.html">Market Prices</a>
+            <a href="government-schemes.html">Government Schemes</a>
+            <a href="weather.html">Weather</a>
+            <a href="expert-help.html">Expert Help</a>
+
+        </nav>
+
+
+        <!-- LOGIN SECTION -->
+        <section class="auth-section">
+
+            <div class="auth-box">
+
+                <h2>Farmer Login</h2>
+
+                <p>Login to access your Farm Connect account</p>
+
+
+                <form id="loginForm">
+
+                    <label for="email">Email</label>
+
+                    <input
+                        type="email"
+                        id="email"
+                        placeholder="Enter your email"
+                        required
+                    >
+
+
+                    <label for="password">Password</label>
+
+                    <input
+                        type="password"
+                        id="password"
+                        placeholder="Enter your password"
+                        required
+                    >
+
+
+                    <button type="submit">Login</button>
+
+                </form>
+
+
+                <p>
+                    New farmer?
+                    <a href="register.html">Register Here</a>
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- FOOTER -->
+        <footer class="footer">
+
+            <h3>Farm Connect</h3>
+
+            <p>
+                Farmer Friendly Portal for useful agricultural information.
+            </p>
+
+            <p>
+                Home | Crop Guide | Market Prices | Government Schemes | Weather | Expert Help
+            </p>
+
+            <p>
+                Copyright © 2026 FarmConnect
+            </p>
+
+        </footer>
+
+    </div>
+
+
+    <!-- JAVASCRIPT -->
+    <script src="script.js"></script>
+
+</body>
+
+</html>

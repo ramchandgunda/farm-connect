@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Farm Connect - Market Prices</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <header class="header">
+
+            <div class="logo">
+                <img src="logo.jpeg" alt="Farm Connect Logo">
+
+                <div>
+                    <h2>Farm Connect</h2>
+                    <small>Farmer Friendly Portal</small>
+                </div>
+            </div>
+
+            <div class="search">
+                <input type="text" id="searchInput" placeholder="Search...">
+                <button id="searchBtn">Search</button>
+            </div>
+
+            <div class="account">
+                <a href="login.html">Login</a>
+                <a href="register.html">Register</a>
+            </div>
+
+        </header>
+
+
+        <nav class="categories">
+
+            <a href="index.html">Home</a>
+            <a href="crop-guide.html">Crop Guide</a>
+            <a href="market-prices.html">Market Prices</a>
+            <a href="government-schemes.html">Government Schemes</a>
+            <a href="weather.html">Weather</a>
+            <a href="expert-help.html">Expert Help</a>
+
+        </nav>
+
+
+        <section class="dashboard">
+
+            <h1>💰 Market Prices</h1>
+
+            <p>
+                View sample agricultural market price information.
+            </p>
+
+
+            <div class="dashboard-grid">
+
+                <div class="dashboard-card">
+                    <h3>🌾 Rice</h3>
+                    <p>Market information for rice.</p>
+                    <button onclick="alert('Rice market information selected')">
+                        View Price
+                    </button>
+                </div>
+
+
+                <div class="dashboard-card">
+                    <h3>🌽 Maize</h3>
+                    <p>Market information for maize.</p>
+                    <button onclick="alert('Maize market information selected')">
+                        View Price
+                    </button>
+                </div>
+
+
+                <div class="dashboard-card">
+                    <h3>🌱 Cotton</h3>
+                    <p>Market information for cotton.</p>
+                    <button onclick="alert('Cotton market information selected')">
+                        View Price
+                    </button>
+                </div>
+
+
+                <div class="dashboard-card">
+                    <h3>🥜 Groundnut</h3>
+                    <p>Market information for groundnut.</p>
+                    <button onclick="alert('Groundnut market information selected')">
+                        View Price
+                    </button>
+                </div>
+
+            </div>
+
+
+            <br>
+
+            <button onclick="window.location.href='index.html'">
+                ← Back to Home
+            </button>
+
+        </section>
+
+
+        <footer class="footer">
+
+            <h3>Farm Connect</h3>
+
+            <p>
+                Farmer Friendly Portal for useful agricultural information.
+            </p>
+
+            <p>
+                Copyright © 2026 FarmConnect
+            </p>
+
+        </footer>
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

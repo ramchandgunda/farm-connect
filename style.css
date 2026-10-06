@@ -1,0 +1,840 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: white;
+    color: #263238;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+
+    grid-template-areas:
+        "header header header header"
+        "menu menu menu menu"
+        "banner banner banner banner"
+        "title title title title"
+        "products products products products"
+        "offers offers offers offers"
+        "services services services services"
+        "footer footer footer footer";
+}
+
+
+/* =========================
+   HEADER
+========================= */
+
+.header {
+    grid-area: header;
+
+    display: grid;
+    grid-template-columns: 25% 55% 20%;
+
+    align-items: center;
+
+    min-height: 100px;
+
+    padding: 10px 20px;
+
+    background-color: #2E7D32;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+
+    gap: 10px;
+
+    color: white;
+}
+
+.logo img {
+    width: 60px;
+    height: 60px;
+
+    object-fit: contain;
+
+    background-color: white;
+
+    border-radius: 50%;
+}
+
+.logo h2 {
+    font-size: 25px;
+}
+
+.logo small {
+    font-size: 12px;
+}
+
+
+/* =========================
+   SEARCH
+========================= */
+
+.search {
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    gap: 5px;
+}
+
+.search input {
+    width: 350px;
+    height: 38px;
+
+    padding: 8px 12px;
+
+    border: none;
+
+    border-radius: 4px;
+
+    font-size: 14px;
+}
+
+.search input:focus {
+    outline: none;
+}
+
+.search button {
+    height: 38px;
+
+    padding: 0 18px;
+
+    border: none;
+
+    border-radius: 4px;
+
+    background-color: #F9A825;
+
+    color: black;
+
+    font-weight: bold;
+
+    cursor: pointer;
+}
+
+.search button:hover {
+    background-color: #F57F17;
+}
+
+.search button:focus {
+    outline: none;
+}
+
+
+/* =========================
+   ACCOUNT
+========================= */
+
+.account {
+    color: white;
+
+    text-align: center;
+
+    white-space: nowrap;
+}
+
+.account a {
+    color: white;
+
+    text-decoration: none;
+
+    font-weight: bold;
+
+    margin: 0 8px;
+}
+
+.account a:visited {
+    color: white;
+}
+
+.account a:hover {
+    color: white;
+
+    text-decoration: underline;
+}
+
+.account a:active {
+    color: white;
+
+    outline: none;
+}
+
+.account a:focus {
+    color: white;
+
+    outline: none;
+}
+
+
+/* =========================
+   CATEGORY MENU
+========================= */
+
+.categories {
+    grid-area: menu;
+
+    display: grid;
+
+    grid-template-columns: repeat(6, 1fr);
+
+    min-height: 50px;
+
+    background-color: #388E3C;
+
+    color: white;
+
+    text-align: center;
+}
+
+.categories div {
+    min-height: 50px;
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    padding: 8px;
+}
+
+.categories div:hover {
+    background-color: #1B5E20;
+}
+
+
+/* =========================
+   CATEGORY LINKS
+========================= */
+
+.categories a {
+    color: white;
+
+    text-decoration: none;
+
+    font-weight: bold;
+}
+
+.categories a:visited {
+    color: white;
+}
+
+.categories a:hover {
+    color: white;
+
+    text-decoration: none;
+}
+
+.categories a:focus {
+    color: white;
+
+    outline: none;
+}
+
+
+/* =========================
+   BANNER
+========================= */
+
+.banner {
+    grid-area: banner;
+
+    width: 100%;
+
+    padding: 10px;
+
+    background-color: #F1F8E9;
+
+    overflow: hidden;
+}
+
+.slider {
+    display: flex;
+
+    width: 300%;
+
+    animation: slide 12s infinite;
+}
+
+.slide {
+    width: 33.3333%;
+
+    height: 300px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+
+    padding: 20px;
+
+    background: linear-gradient(
+        135deg,
+        #A5D6A7,
+        #FFF9C4
+    );
+}
+
+.slide-icon {
+    font-size: 65px;
+
+    margin-bottom: 10px;
+}
+
+.slide h1 {
+    font-size: 36px;
+
+    margin: 10px;
+
+    color: #1B5E20;
+}
+
+.slide p {
+    font-size: 18px;
+
+    max-width: 700px;
+}
+
+
+/* =========================
+   BANNER ANIMATION
+========================= */
+
+@keyframes slide {
+
+    0%, 28% {
+        transform: translateX(0);
+    }
+
+    33%, 61% {
+        transform: translateX(-33.3333%);
+    }
+
+    66%, 94% {
+        transform: translateX(-66.6666%);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+
+/* =========================
+   FARMER SERVICES TITLE
+========================= */
+
+.product-title {
+    grid-area: title;
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    min-height: 60px;
+
+    background-color: #2E7D32;
+
+    color: white;
+
+    text-align: center;
+}
+
+.product-title h2 {
+    font-size: 24px;
+
+    letter-spacing: 1px;
+}
+
+
+/* =========================
+   SERVICE CARDS
+========================= */
+
+.products {
+    grid-area: products;
+
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 15px;
+
+    padding: 25px;
+
+    background-color: white;
+}
+
+.product {
+    text-align: center;
+
+    padding: 22px 15px;
+
+    border: 1px solid #D5D5D5;
+
+    border-radius: 10px;
+
+    min-height: 230px;
+
+    background-color: white;
+
+    transition: 0.3s;
+}
+
+.product:hover {
+    transform: translateY(-5px);
+
+    box-shadow: 0 7px 18px #cccccc;
+}
+
+.card-icon {
+    font-size: 48px;
+
+    margin-bottom: 8px;
+}
+
+.product h3 {
+    margin: 8px 0;
+
+    color: #2E7D32;
+
+    font-size: 20px;
+}
+
+.product p {
+    min-height: 55px;
+
+    line-height: 1.5;
+
+    font-size: 14px;
+}
+
+.product input {
+    padding: 10px 18px;
+
+    background-color: #388E3C;
+
+    color: white;
+
+    border: none;
+
+    cursor: pointer;
+
+    border-radius: 5px;
+
+    margin-top: 12px;
+
+    font-weight: bold;
+}
+
+.product input:hover {
+    background-color: #1B5E20;
+}
+
+.product input:focus {
+    outline: none;
+}
+
+
+/* =========================
+   HIGHLIGHTS
+========================= */
+
+.offers {
+    grid-area: offers;
+
+    background-color: #FFF9C4;
+
+    text-align: center;
+
+    padding: 25px;
+}
+
+.offers h2 {
+    margin-bottom: 15px;
+
+    color: #33691E;
+}
+
+.offers p {
+    margin: 9px;
+
+    font-size: 15px;
+}
+
+
+/* =========================
+   SERVICES
+========================= */
+
+.services {
+    grid-area: services;
+
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    background-color: #E8F5E9;
+
+    text-align: center;
+
+    padding: 30px 20px;
+
+    gap: 15px;
+}
+
+.services div {
+    padding: 10px;
+}
+
+.services h3 {
+    color: #2E7D32;
+
+    margin-bottom: 8px;
+}
+
+.services p {
+    font-size: 14px;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+.footer {
+    grid-area: footer;
+
+    background-color: #263238;
+
+    color: white;
+
+    text-align: center;
+
+    padding: 25px;
+}
+
+.footer h2 {
+    margin-bottom: 10px;
+}
+
+.footer h3 {
+    margin-bottom: 10px;
+}
+
+.footer p {
+    margin-top: 8px;
+
+    font-size: 14px;
+}
+
+
+/* =========================
+   LOGIN / REGISTER
+========================= */
+
+.auth-section {
+    grid-column: 1 / -1;
+
+    min-height: 520px;
+
+    display: grid;
+
+    place-items: center;
+
+    padding: 40px 20px;
+
+    background-color: #F5F5F5;
+}
+
+.auth-box {
+    width: 430px;
+
+    max-width: 100%;
+
+    padding: 30px;
+
+    background-color: white;
+
+    border-radius: 10px;
+
+    box-shadow: 0 5px 20px #aaaaaa;
+}
+
+.auth-box h2 {
+    text-align: center;
+
+    color: #2E7D32;
+
+    margin-bottom: 25px;
+}
+
+.auth-box label {
+    display: block;
+
+    margin-top: 14px;
+
+    margin-bottom: 5px;
+
+    font-weight: bold;
+}
+
+.auth-box input {
+    width: 100%;
+
+    padding: 11px;
+
+    border: 1px solid #cccccc;
+
+    border-radius: 5px;
+
+    font-size: 15px;
+}
+
+.auth-box input:focus {
+    outline: none;
+
+    border-color: #388E3C;
+}
+
+.auth-box button {
+    width: 100%;
+
+    padding: 12px;
+
+    margin-top: 25px;
+
+    border: none;
+
+    border-radius: 5px;
+
+    background-color: #388E3C;
+
+    color: white;
+
+    font-size: 16px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+}
+
+.auth-box button:hover {
+    background-color: #1B5E20;
+}
+
+.auth-box button:focus {
+    outline: none;
+}
+
+.auth-box p {
+    text-align: center;
+
+    margin-top: 18px;
+}
+
+.auth-box a {
+    color: #2E7D32;
+
+    font-weight: bold;
+
+    text-decoration: none;
+}
+
+.auth-box a:visited {
+    color: #2E7D32;
+}
+
+.auth-box a:hover {
+    color: #1B5E20;
+
+    text-decoration: underline;
+}
+
+.auth-box a:focus {
+    outline: none;
+}
+
+
+/* =========================
+   DASHBOARD
+========================= */
+
+.dashboard {
+    grid-column: 1 / -1;
+
+    min-height: 520px;
+
+    padding: 40px;
+
+    text-align: center;
+
+    background-color: #F1F8E9;
+}
+
+.dashboard h1 {
+    color: #1B5E20;
+
+    margin-bottom: 10px;
+}
+
+.dashboard h2 {
+    margin-bottom: 12px;
+}
+
+.dashboard-grid {
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 15px;
+
+    margin-top: 35px;
+}
+
+.dashboard-card {
+    background-color: white;
+
+    border: 1px solid #dddddd;
+
+    border-radius: 8px;
+
+    padding: 25px 15px;
+
+    min-height: 160px;
+
+    box-shadow: 0 3px 10px #dddddd;
+}
+
+.dashboard-card span {
+    font-size: 40px;
+}
+
+.dashboard-card h3 {
+    color: #2E7D32;
+
+    margin: 10px 0;
+}
+
+
+/* =========================
+   ALL LINKS
+========================= */
+
+a {
+    outline: none;
+}
+
+a:focus {
+    outline: none;
+}
+
+
+/* =========================
+   RESPONSIVE DESIGN
+========================= */
+
+@media (max-width: 768px) {
+
+    .header {
+        grid-template-columns: 1fr;
+
+        height: auto;
+
+        gap: 15px;
+
+        text-align: center;
+    }
+
+    .logo {
+        justify-content: center;
+    }
+
+    .search {
+        width: 100%;
+    }
+
+    .search input {
+        width: 70%;
+    }
+
+    .account {
+        padding-bottom: 10px;
+    }
+
+    .categories {
+        grid-template-columns: repeat(3, 1fr);
+
+        height: auto;
+    }
+
+    .categories div {
+        padding: 12px 5px;
+    }
+
+    .products {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .services {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .dashboard-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .dashboard {
+        padding: 25px 15px;
+    }
+}
+
+
+/* =========================
+   SMALL MOBILE
+========================= */
+
+@media (max-width: 480px) {
+
+    .products,
+    .services,
+    .dashboard-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .categories {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .slide h1 {
+        font-size: 25px;
+    }
+
+    .slide p {
+        font-size: 15px;
+    }
+
+    .logo img {
+        width: 50px;
+
+        height: 50px;
+    }
+}

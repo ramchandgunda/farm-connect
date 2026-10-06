@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Farm Connect - User Dashboard</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <!-- HEADER -->
+        <header class="header">
+
+            <div class="logo">
+                <img src="logo.jpeg" alt="Farm Connect Logo">
+
+                <div>
+                    <h2>Farm Connect</h2>
+                    <small>Farmer Friendly Portal</small>
+                </div>
+            </div>
+
+            <div class="search">
+                <input type="text" id="searchInput" placeholder="Search...">
+                <button id="searchBtn">Search</button>
+            </div>
+
+            <div class="account">
+                <a href="index.html">Home</a>
+                <a href="login.html">Logout</a>
+            </div>
+
+        </header>
+
+
+        <!-- CATEGORIES -->
+        <nav class="categories">
+
+            <a href="index.html">Home</a>
+            <a href="crop-guide.html">Crop Guide</a>
+            <a href="market-prices.html">Market Prices</a>
+            <a href="government-schemes.html">Government Schemes</a>
+            <a href="weather.html">Weather</a>
+            <a href="expert-help.html">Expert Help</a>
+
+        </nav>
+
+
+        <!-- USER DASHBOARD -->
+        <section class="dashboard">
+
+            <h1 id="welcomeMessage">Welcome, Farmer!</h1>
+
+            <p>
+                Welcome to your Farm Connect dashboard.
+            </p>
+
+
+            <div class="dashboard-grid">
+
+                <div class="dashboard-card">
+                    <h3>🌾 Crop Guide</h3>
+                    <p>
+                        Get useful information about crops, cultivation,
+                        and farming practices.
+                    </p>
+                    <button onclick="alert('Crop Guide selected')">
+                        Explore
+                    </button>
+                </div>
+
+
+                <div class="dashboard-card">
+                    <h3>💰 Market Prices</h3>
+                    <p>
+                        Check useful information about agricultural
+                        market prices.
+                    </p>
+                    <button onclick="alert('Market Prices selected')">
+                        View Prices
+                    </button>
+                </div>
+
+
+                <div class="dashboard-card">
+                    <h3>🏛️ Government Schemes</h3>
+                    <p>
+                        Learn about government schemes and support
+                        available for farmers.
+                    </p>
+                    <button onclick="alert('Government Schemes selected')">
+                        View Schemes
+                    </button>
+                </div>
+
+
+                <div class="dashboard-card">
+                    <h3>🌦️ Weather Updates</h3>
+                    <p>
+                        Stay informed about weather conditions that
+                        may affect farming.
+                    </p>
+                    <button onclick="alert('Weather Updates selected')">
+                        Check Weather
+                    </button>
+                </div>
+
+
+                <div class="dashboard-card">
+                    <h3>👨‍🌾 Farmer Community</h3>
+                    <p>
+                        Connect with other farmers and share useful
+                        farming information.
+                    </p>
+                    <button onclick="alert('Farmer Community selected')">
+                        Join Community
+                    </button>
+                </div>
+
+
+                <div class="dashboard-card">
+                    <h3>👨‍💼 Expert Help</h3>
+                    <p>
+                        Find useful guidance and support for farming
+                        related questions.
+                    </p>
+                    <button onclick="alert('Expert Help selected')">
+                        Get Help
+                    </button>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- FOOTER -->
+        <footer class="footer">
+
+            <h3>Farm Connect</h3>
+
+            <p>
+                Farmer Friendly Portal for useful agricultural information.
+            </p>
+
+            <p>
+                Copyright © 2026 FarmConnect
+            </p>
+
+        </footer>
+
+    </div>
+
+
+    <!-- JAVASCRIPT -->
+    <script src="script.js"></script>
+
+</body>
+
+</html>
